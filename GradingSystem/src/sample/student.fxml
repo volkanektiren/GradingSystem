@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane minHeight="456.0" prefHeight="456.0" prefWidth="1010.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="sample.StudentController">
+  <children>
+    <TableView fx:id="tableStudentCourses" layoutX="44.0" layoutY="78.0" prefHeight="323.0" prefWidth="667.0">
+      <columns>
+        <TableColumn fx:id="columnCourseID" maxWidth="5000.0" minWidth="10.0" prefWidth="156.0" text="ID" />
+        <TableColumn fx:id="columnCourseName" maxWidth="5000.0" minWidth="10.0" prefWidth="435.0" text="Name" />
+        <TableColumn fx:id="columnGrade" prefWidth="75.0" text="Grade" />
+      </columns>
+    </TableView>
+    <Label layoutX="44.0" layoutY="42.0" text="My Courses">
+      <font>
+        <Font name="System Bold" size="15.0" />
+      </font>
+    </Label>
+    <Button fx:id="btnregistercourse" onAction="#registerCourse" layoutX="728.0" layoutY="168.0" mnemonicParsing="false" text="Register a Course" />
+    <Button fx:id="btnshowstudentcourses" onAction="#getStudentCourses" layoutX="728.0" layoutY="110.0" mnemonicParsing="false" text="Show My Courses" />
+    <Button fx:id="btnshowgrades" onAction="#getCourseGrades" layoutX="728.0" layoutY="226.0" mnemonicParsing="false" text="Show Selected Course Class Grades" />
+  </children>
+</AnchorPane>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="sample.LoginController">
+  <children>
+    <TextField fx:id="txtUserName" layoutX="200.0" layoutY="150.0" prefWidth="200.0" promptText="USERNAME" />
+    <PasswordField fx:id="txtPassword" layoutX="200.0" layoutY="187.0" prefWidth="200.0" promptText="PASSWORD" />
+    <MenuButton fx:id="txtLoginType" layoutX="237.0" layoutY="225.0" mnemonicParsing="false" text="Login Type">
+      <items>
+        <MenuItem mnemonicParsing="false" onAction="#loginadmin" text="Administrator" fx:id="txtAdmin" />
+        <MenuItem mnemonicParsing="false" onAction="#logininstructor" text="Instructor" fx:id="txtInstructor" />
+        <MenuItem mnemonicParsing="false" onAction="#loginstudent" text="Student" fx:id="txtStudent" />
+      </items>
+    </MenuButton>
+    <Button layoutX="265.0" layoutY="265.0" mnemonicParsing="false" onAction="#login" text="LOGIN" />
+  </children>
+</AnchorPane>

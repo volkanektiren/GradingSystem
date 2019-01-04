@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox prefHeight="248.0" prefWidth="306.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="sample.AddUserController">
+  <children>
+    <MenuButton fx:id="txtUserType" mnemonicParsing="false" text="UserType">
+      <items>
+        <MenuItem mnemonicParsing="false" onAction="#addstudent" text="Student" fx:id="txtStudent" />
+        <MenuItem mnemonicParsing="false" onAction="#addinstructor" text="Instructor" fx:id="txtInstructor" />
+      </items>
+    </MenuButton>
+    <TextField fx:id="txtName" prefWidth="216.0" promptText="Name" />
+    <TextField fx:id="txtSurname" prefWidth="200.0" promptText="Surname" />
+    <TextField fx:id="txtEmail" prefWidth="200.0" promptText="Email" />
+    <TextField fx:id="txtTel" prefWidth="200.0" promptText="Telephone" />
+    <TextField fx:id="txtUsername" prefWidth="200.0" promptText="Username" />
+    <TextField fx:id="txtPassword" prefWidth="200.0" promptText="Password" />
+    <Button mnemonicParsing="false" onAction="#add" text="Add" />
+  </children>
+</VBox>

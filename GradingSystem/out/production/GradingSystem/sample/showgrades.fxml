@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="550.0" prefWidth="1037.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="sample.InstructorController">
+  <children>
+    <TableView fx:id="tableGrades" layoutX="65.0" layoutY="56.0" prefHeight="435.0" prefWidth="683.0">
+      <columns>
+        <TableColumn maxWidth="5000.0" minWidth="10.0" prefWidth="158.0" text="Student ID" fx:id="columnStudentID" />
+        <TableColumn maxWidth="5000.0" minWidth="10.0" prefWidth="198.0" text="Student Name" fx:id="columnStudentName" />
+        <TableColumn maxWidth="5000.0" minWidth="0.0" prefWidth="199.0" text="Student Surname" fx:id="columnStudentSurname"/>
+        <TableColumn maxWidth="5000.0" minWidth="10.0" prefWidth="130.0" text="Student Grade" fx:id="columnStudentGrade" />
+      </columns>
+    </TableView>
+    <Button fx:id="btnShowStudentGrades" layoutX="820.0" layoutY="87.0" mnemonicParsing="false" onAction="#showStudentGrades" text="Show Grades" />
+    <Button fx:id="btnChangeGrade" layoutX="768.0" layoutY="150.0" mnemonicParsing="false" onAction="#changeGrade" text="Change Selected Student Grade" />
+    <TextArea fx:id="txtResult2" layoutX="787.0" layoutY="399.0" prefHeight="92.0" prefWidth="200.0" text="Please click 'Show Grades' button to see the table." wrapText="true" />
+    <Label layoutX="787.0" layoutY="366.0" text="Result">
+      <font>
+        <Font name="System Bold" size="15.0" />
+      </font>
+    </Label>
+  </children>
+</AnchorPane>
